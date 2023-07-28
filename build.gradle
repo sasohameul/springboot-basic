@@ -39,6 +39,15 @@ dependencies {
 	// tyhmeleaf 를 뷰로 사용하려면! 뒤에 버전 지우기. 그러면 현재 스프링 버전에 맞춰지게됨
 	implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
 	
+	// 유효성 검사
+	implementation 'org.springframework.boot:spring-boot-starter-validation:2.7.5'
+	
+	//마이바티스 + 커넥터
+	implementation 'org.mybatis.spring.boot:mybatis-spring-boot-starter:2.2.0'
+		
+	//jdbc 로그	
+	implementation 'org.bgee.log4jdbc-log4j2:log4jdbc-log4j2-jdbc4.1:1.16'	
+	
 }
 
 tasks.named('test') {
